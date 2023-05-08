@@ -17,12 +17,12 @@
  */
 
 #include <iostream>
-#include <extras_cpp/game/clazz.hpp>
+#include <extras_doc/game/clazz.hpp>
 
 #include "../../vendor/catch.hpp"
 
 using namespace std;
-using namespace extras::cpp;
+using namespace extras::doc;
 
 SCENARIO("test game::methods", "[JIRA-1440]")
 {

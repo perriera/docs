@@ -16,12 +16,12 @@
  *
  */
 
-#include <extras_cpp/game/clazz.hpp>
+#include <extras_doc/game/clazz.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 
 using namespace std;
-using namespace extras::cpp;
+using namespace extras::doc;
 
 game::ChessGame::ChessGame(int x, int y)
   : _x(x), _y(y)

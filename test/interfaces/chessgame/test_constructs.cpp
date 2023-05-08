@@ -17,13 +17,13 @@
  */
 
 #include <iostream>
-#include <extras_cpp/game/clazz.hpp>
+#include <extras_doc/game/clazz.hpp>
 
 #include "../../vendor/catch.hpp"
 
 using namespace std;
 using namespace extras;
-using namespace extras::cpp;
+using namespace extras::doc;
 
 SCENARIO("test game::constructs", "[JIRA-1440]")
 {
@@ -33,9 +33,9 @@ SCENARIO("test game::constructs", "[JIRA-1440]")
      *    with various parameters
      *
      */
-    cpp::game::ChessGame game(1, 2);
+    doc::game::ChessGame game(1, 2);
 
     REQUIRE_THROWS_AS(
-        cpp::game::ChessGame(0, 0), game::EndOfGameReachedException);
+        doc::game::ChessGame(0, 0), game::EndOfGameReachedException);
 
 }

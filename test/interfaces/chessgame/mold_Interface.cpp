@@ -17,14 +17,14 @@
  */
 
 #include <iostream>
-#include <extras_cpp/game/interface.hpp>
+#include <extras_doc/game/interface.hpp>
 #include <extras/docking/DockIt.hpp>
 
 #include "../../vendor/catch.hpp"
 #include "../../vendor/fakeit.hpp"
 
 using namespace extras;
-using namespace extras::cpp;
+using namespace extras::doc;
 using namespace fakeit;
 
 /**
@@ -50,7 +50,7 @@ SCENARIO("Mold ChessGameInterface", "[JIRA-1440]") {
      *
      */
 
-    Mold<cpp::game::Interface> dock;
+    Mold<doc::game::Interface> dock;
     When(Method(dock, moves)).Return();
     When(Method(dock, exists)).AlwaysDo([]() { return true; });
     When(Method(dock, piece)).AlwaysDo([](int, int) { return true; });
@@ -58,7 +58,7 @@ SCENARIO("Mold ChessGameInterface", "[JIRA-1440]") {
     When(Method(dock, zone)).AlwaysDo([&_x, &_y](int row, int col) {
         return row == _x && col == _y;
         });
-    cpp::game::Interface& i = dock.get();
+    doc::game::Interface& i = dock.get();
 
     /**
      *    Steps 4. in this step carry out at least one typical

@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef _EXTRAS_CPP_CHESSGAME_INTERFACE_HPP
-#define _EXTRAS_CPP_CHESSGAME_INTERFACE_HPP
+#ifndef _EXTRAS_DOC_CHESSGAME_INTERFACE_HPP
+#define _EXTRAS_DOC_CHESSGAME_INTERFACE_HPP
 
  /**
   * @brief the "MIT/X Consortium License", (adapted for EXPARX.COM)
@@ -34,7 +34,7 @@
 #include <extras/interfaces.hpp>
 
 namespace extras {
-    namespace cpp {
+    namespace doc {
         namespace game {
 
             /**
@@ -91,4 +91,4 @@ namespace extras {
     } // end namespace 
 }
 
-#endif // _EXTRAS_CPP_CHESSGAME_INTERFACE_HPP
+#endif // _EXTRAS_DOC_CHESSGAME_INTERFACE_HPP

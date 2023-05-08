@@ -16,7 +16,7 @@
  *
  */
 
-#include <extras_cpp/game/clazz.hpp>
+#include <extras_doc/game/clazz.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 
@@ -24,7 +24,7 @@ using namespace std;
 using namespace extras;
 
 namespace extras {
-  namespace cpp {
+  namespace doc {
     namespace game {
 
       void ChessGame::moves() const {}

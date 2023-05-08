@@ -88,7 +88,7 @@ From here you have created a new project with the **(perriera) extras** template
  11. Execute **code .** 
 
 ### Alternate Case
-#### You already have created a clone from the extras_cpp template
+#### You already have created a clone from the extras_doc template
  1. There should be a green Code button, click it
  2. Select the SSH tab (default)
  3. Copy the URL to the clipboard

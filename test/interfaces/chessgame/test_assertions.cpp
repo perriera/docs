@@ -17,13 +17,13 @@
  */
 
 #include <iostream>
-#include <extras_cpp/game/interface.hpp>
+#include <extras_doc/game/interface.hpp>
 
 #include "../../vendor/catch.hpp"
 
 using namespace std;
 using namespace extras;
-using namespace extras::cpp;
+using namespace extras::doc;
 
 SCENARIO("test game::Interface assertions", "[JIRA-1440]") {
 
