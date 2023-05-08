@@ -5,8 +5,8 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.1.0 -m "extras_doc created using extras 8.6.5"</br>
-> > git push origin v0.1.0
+> > git tag -a v0.2.0 -m "slimmed down unnecessary files"</br>
+> > git push origin v0.2.0
 
 IMPORTANT:
 
@@ -32,50 +32,17 @@ Adding dock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordingly</br>
 
-#### 0.2.0 (2023-MM-DD)
+#### 0.2.0 (2023-05-08)
 ### Changed
-- extras_doc created from template
+- slimmed down unnecessary files
 
-#### 0.1.0 (2021-09-03)
+#### 0.1.0 (2023-05-08)
 ### Added
-- SHARED library support
-- (perriera) extras library support 
-- CPM.cmake support
-  - [CPM.cmake](https://github.com/cpm-cmake/CPM.cmake/blob/master/LICENSE)
-  - This allows us to include other Github packages with the ability
-    to add package OPTIONS
-- FakeIt Mock Library support
-  - [FakeIt](https://github.com/eranpeer/FakeIt)
-  - This gives us the ability to mock C++ interfaces, (before implementation)
-- Catch2 support
-  - [Catch2](https://github.com/catchorg/Catch2)
-  - This gives us the ability to test C++ classes, (during implementation)
+- extras_doc branded (using RUNMEFIRST.sh)
 
-### Changed
-
-- CMakeLists.txt
-  - [ModernCppStarter](https://github.com/TheLartians/ModernCppStarter/blob/master/LICENSE)
-- spdlog is now used as a shared library, (libspdlog.so)
-- cpr is now used as a shared library, (libcpr.so)
-- placed all source into /src
-- placed all headers into /include/extras_doc
-
-#### 0.1.0 (2021-08-26)
-
+#### 0.0.0 (2023-05-08)
 ### Added
-
-- Fetch_Content support
-- changelog.md
-- Project VERSION inside CMakeLists.txt & changelog.md
-- Adopted new changelog format.
-- sudo make install parameters
-- shared library support
-- sudo checkinstall support
-- GoF: Abstract design pattern support
-- Debian package support
-- extra/interfaces.hpp support
-- Unit test casses support, (Catch2)
-- Mock framework support, (FakeIt)
+- extras_doc created using extras_cpp 8.x.x
 
 ### Changed
 
@@ -96,6 +63,7 @@ Updated README.md accordingly</br>
 
 ### Note
 > The following will only show on PUBLIC repositories:
-[unreleased]: https://github.com/perriera/extras_doc/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/perriera/extras_doc/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/perriera/extras_doc/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/perriera/extras_doc/compare/v0.0.0...v0.1.0
 [0.0.0]: https://github.com/perriera/extras_doc/tree/v0.0.0
