@@ -5,8 +5,8 @@
 > and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
 >
-> > git tag -a v0.2.0 -m "slimmed down unnecessary files"</br>
-> > git push origin v0.2.0
+> > git tag -a v0.3.0 -m "raised folders (for better access)"</br>
+> > git push origin v0.3.0
 
 IMPORTANT:
 
@@ -31,6 +31,10 @@ Correct URL for github, (for source compare)</br>
 Adding dock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordingly</br>
+
+#### 0.3.0 (2023-05-08)
+### Changed
+- raised folders (for better access)
 
 #### 0.2.0 (2023-05-08)
 ### Changed
@@ -63,7 +67,8 @@ Updated README.md accordingly</br>
 
 ### Note
 > The following will only show on PUBLIC repositories:
-[unreleased]: https://github.com/perriera/extras_doc/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/perriera/extras_doc/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/perriera/extras_doc/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/perriera/extras_doc/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/perriera/extras_doc/compare/v0.0.0...v0.1.0
 [0.0.0]: https://github.com/perriera/extras_doc/tree/v0.0.0
