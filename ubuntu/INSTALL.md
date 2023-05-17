@@ -24,7 +24,7 @@ Now that you have your project cloned we need to make sure you have the tools ne
 
  - [ ] Assuming that was successful, install CMake 
 
-		pip install clang-format
+		sudo apt-get -y install clang-format
 		pip install cmake-format
 		sudo snap install cmake --classic 
 
