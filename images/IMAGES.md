@@ -15,3 +15,12 @@ cat dupres.txt
 
 
 ```
+### compress movies
+```
+for f in Videos/*.mov; do ffmpeg -i "$f" -vcodec libx265 -crf 22 "Videos/$(basename "${f%.*}").mkv"; done 
+```
+
+### compress images
+```
+for i in *.png ; do convert "$i" "${i%.*}.jpg" ; done
+```
