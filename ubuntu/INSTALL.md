@@ -56,6 +56,17 @@ Now that you have your project cloned we need to make sure you have the tools ne
 >	Visual Studio Code will detect whatever language you are using and offer to install extentions automatically. Feel free to allow all recommendations as they appear to the bottom right of the Visual Studio Code environment.
 
 ### Alternate Case 
+> **Bad CMake executable "/snap/bin/cmake"** </br>
+>	cmake has been going through alot of improvemetns and the latest  method of installation from the command line provides the 3.21 requirement (see [bad cmake executable vscode](https://askubuntu.com/questions/1353824/bad-cmake-executable-vscode)):
+```
+snap remove cmake
+sudo apt-get update
+sudo apt-get install cmake
+sudo apt-add-repository universe
+sudo apt-get install cmake-extras
+```
+
+### Alternate Case 
 > **Ubuntu 18.04** </br>
 >	Slightly different parameters required
 ```
