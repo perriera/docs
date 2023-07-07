@@ -1,7 +1,7 @@
 ### notes on git 
-> -[How can I undo pushed commits using git?](https://stackoverflow.com/questions/22682870/how-can-i-undo-pushed-commits-using-git)
-> -[How do I delete a file from a Git repository?](https://stackoverflow.com/questions/2047465/how-do-i-delete-a-file-from-a-git-repository)
-> -[How do I fix a Git detached head?](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
+>- [How can I undo pushed commits using git?](https://stackoverflow.com/questions/22682870/how-can-i-undo-pushed-commits-using-git)
+>- [How do I delete a file from a Git repository?](https://stackoverflow.com/questions/2047465/how-do-i-delete-a-file-from-a-git-repository)
+>- [How do I fix a Git detached head?](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
 ```
 git reset --hard 'xxxxx' 
 git clean -f -d 
