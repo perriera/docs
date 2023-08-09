@@ -98,6 +98,7 @@
  - [ ] Now create your first project on your private git server
 
 		cd /srv/git
+		git config --global init.defaultBranch dev
 		git init --bare xyzutil.git
 		cd xyzutil.git/hooks
 		cp post-update.sample post-update
