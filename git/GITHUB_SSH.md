@@ -21,12 +21,13 @@
 
  - [ ] Update/upgrade the system & add necessary support
 
+		sudo add-apt-repository -y ppa:git-core/ppa
 		sudo apt update -y
 		sudo apt upgrade -y
 		sudo apt autoremove -y
-		sudo apt update -y
-		sudo apt install git openssh-server -y
-		sudo reboot 
+		sudo apt install git -y
+		sudo apt install openssh-server -y
+		sudo reboot
 
  - [ ] Create your very own **git** account (and add a server directory)
 
@@ -99,8 +100,10 @@
 
 		cd /srv/git
 		git config --global init.defaultBranch dev
-		git init --bare xyzutil.git
-		cd xyzutil.git/hooks
+		git init --initial-branch=dev --bare xyzutil.git
+		cd xyzutil.git
+		git branch -m master dev
+		cd hooks
 		cp post-update.sample post-update
 		exit
 
@@ -121,7 +124,10 @@
 		 
 		cd xyzutil
 		echo “my test file” > file1.txt
-		git add .; git commit -m "initial content"; 
+		git add .; git commit -m "initial content";
+		git branch dev
+		git checkout dev
+		git push --set-upstream origin dev
 		git push
 		cd ..
 
