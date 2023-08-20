@@ -20,5 +20,6 @@ ng version
 ### Create your first Angular App on Ubuntu 22.04 | 20.04
 ```
 ng new myapp
-
+cd myapp
+ng serve
 ```
