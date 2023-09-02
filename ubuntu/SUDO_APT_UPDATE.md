@@ -36,3 +36,7 @@ sudo mv /etc/apt/sources.list.d/* ~/solution
 sudo apt update
 ```
 Now there should be no errors.
+
+### missing key issues
+[Fix apt-get update “the following signatures couldn’t be verified because the public key is not available”](https://chrisjean.com/fix-apt-get-update-the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available/)
+[gpg: keyserver receive failed: Server indicated a failure](https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-server-indicated-a-failure)
