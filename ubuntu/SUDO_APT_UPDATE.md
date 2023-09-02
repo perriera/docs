@@ -40,3 +40,5 @@ Now there should be no errors.
 ### missing key issues
 [Fix apt-get update “the following signatures couldn’t be verified because the public key is not available”](https://chrisjean.com/fix-apt-get-update-the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available/)
 [gpg: keyserver receive failed: Server indicated a failure](https://unix.stackexchange.com/questions/399027/gpg-keyserver-receive-failed-server-indicated-a-failure)
+["The following packages have been kept back:" Why and how do I solve it?](https://askubuntu.com/questions/601/the-following-packages-have-been-kept-back-why-and-how-do-i-solve-it)
+[apt-key deprecation warning when updating system](https://askubuntu.com/questions/1398344/apt-key-deprecation-warning-when-updating-system)
