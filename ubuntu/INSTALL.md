@@ -20,7 +20,7 @@ Now that you have your project cloned we need to make sure you have the tools ne
  - [ ] Now copy and paste the following for a Linux environment
 
 		sudo apt update
-		sudo apt install -y build-essential libtool autotools-dev automake pkg-config git clangd cppcheck clang-tidy python3-pip checkinstall gdb gcc-multilib g++-multilib
+		sudo apt install -y build-essential libtool autotools-dev automake pkg-config git clangd cppcheck clang-tidy python3-pip checkinstall gdb
 
  - [ ] Assuming that was successful, install CMake 
 
@@ -50,6 +50,15 @@ Now that you have your project cloned we need to make sure you have the tools ne
 
 		cd <into your project directory>
 		code .
+
+### Alternate Case 
+> error: snap "code" is not available on stable for this architecture (arm64) but exists on other architectures (amd64).
+In the case of the Apple M1 (and you are running Linux under a VM like Parallels or VirtualBox) what you want to do is connect to the Linux box via it's IP address over SSH.
+```
+sudo apt install net-tools
+ifconfig
+```
+Get the IP address and after adding the ~/.ssh/id_ed25519.pub key to the ~/.ssh/authorized_keys of the Linux box log into it via ssh protocol
 
 ### Alternate Case 
 > **Visual Studio Code Extensions** </br>
