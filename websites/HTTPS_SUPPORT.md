@@ -1,6 +1,7 @@
 
 
 
+
 ## How To Secure Apache with Let's Encrypt on Ubuntu 20.04
 > To be able to host multiple websites off one single web server and for those to be https compliant is worth it's weight in gold. This How-To describes how to set up such a platform using Apache, certbot and a well established version of Ubuntu.
 
@@ -32,32 +33,32 @@ sudo reboot
 ```
 sudo vi /etc/apache2/sites-available/freeformjs.org.conf
 ```
- - [ ] now the following contents (and replace 'freeformjs.org'
+ - [ ] now the following contents (and replace 'freeformjs.org' with your specific domain name)
 ```
 <VirtualHost *:80>
-    ServerAdmin admin@cplusplus.org
-    ServerName cplusplus.org
+    ServerAdmin admin@freeformjs.org
+    ServerName freeformjs.org
 
-     <Directory /var/www/cplusplus.org/public_html>
+     <Directory /var/www/freeformjs.org/public_html>
         Options Indexes FollowSymLinks MultiViews
         AllowOverride All
         Order allow,deny
         allow from all
      </Directory>
 
-    ServerAlias www.cplusplus.org
-    DocumentRoot /var/www/cplusplus.org/public_html
+    ServerAlias www.freeformjs.org 
+    DocumentRoot /var/www/freeformjs.org/public_html
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
- - [ ] now create a place for the virtual host
+ - [ ] now create a place for the virtual host, (again replace 'freeformjs.org' with your specific domain name)
 ```
 sudo mkdir -p /var/www/freeformjs.org/public_html
 sudo chown -R $USER:$USER /var/www/freeformjs.org/public_html
 vi /var/www/freeformjs.org/public_html/index.html
 ```
-Add the following:
+Add the following content for the index page:
 ```
 <html>
     <head>
@@ -95,7 +96,8 @@ sudo ufw status
 ping ip_address
 ping domain name
 ```
-The ip values should be the same
+> The ip values should be the same
+> In the case where the IP address is not the same see Alternate Case below
  - [ ] now add an SSL Certificate (compliments certbot):
 ```
 sudo certbot --apache
@@ -120,7 +122,7 @@ sudo systemctl status certbot.timer
 At this point you should back up your Ubuntu instance before continuing.
 
 ### Alternate Case
-> **AH00558: apache2: Could not reliably determine**<br/><br/>
+> **AH00558: apache2: Could not reliably determine**
 > This might show up and it means there is something missing from apache2 setup:
 ```
 sudo vi /etc/apache2/apache2.conf
@@ -136,6 +138,9 @@ Then rerun the test:
 ```
 sudo apache2ctl configtest
 ```
+### Alternate Case
+> **The ip values should be the same, (but are not)**
+> This happens in the case your DNS / Nameservers domain name regisitration is not pointing to the website's IP address as well as the website's IP has not been configured to expect the domain name (DNS records). The details of which can be too detailed for a single how-to page but the basic requirements have been attached as images, (see 001.png and 002.png). 
 
 
 ### Summary 
