@@ -9,3 +9,7 @@ sudo vi /etc/hostname
 sudo vi /etc/hosts
 sudo reboot
 ```
+### Log files
+[In-Depth Instructions on How To Find and Delete Log Files in Linux](https://recoverit.wondershare.com/file-recovery/linux-clear-logs.html)
+[7 Simple Ways to Free Up Space on Ubuntu and Linux Mint](https://itsfoss.com/free-up-space-ubuntu-linux/)
+[Optimize Ubuntu System With Stacer](https://itsfoss.com/optimize-ubuntu-stacer/)
