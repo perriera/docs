@@ -1,2 +1,3 @@
 ### duplicate 
-See UBUNTU/INSTALL.md
+See os/linux/INSTALL.md
+
