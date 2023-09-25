@@ -1,9 +1,10 @@
+
 ## How to install the tools necessary for C++11/17 projects
 > In this step we need to install all the tools used by this project (that you may or may not already have installed.
 
- 1. **GIVEN** we need to have C++17, cmake 3.2.1, pip installed
- 2. **WHEN** we follow the instructions listed here
- 3. **THEN** we can press Ctrl-B inside Visual Studio Code
+ 1. **GIVEN** we need to have g++ tools installed 
+ 2. **WHEN** we update the Ubuntu install and install the tools required
+ 3. **THEN** we build projects using g++, cmake and  CPM
 
 ### Prerequisites
   - [How to install a Linux Platform (Ubuntu 20.04.4)](https://github.com/perriera/extras_dbo/blob/dev/docs/UBUNTU.md)
@@ -17,9 +18,16 @@ Now that you have your project cloned we need to make sure you have the tools ne
 	
 		sudo ls
 	
- - [ ] Now copy and paste the following for a Linux environment
+ - [ ] Now bring Ubuntu up to date
 
-		sudo apt update
+		sudo apt update -y
+		sudo apt upgrade -y
+		sudo apt autoremove -y
+		sudo apt autoclean -y
+		sudo reboot 
+
+ - [ ] Now install gcc build tools
+
 		sudo apt install -y build-essential libtool autotools-dev automake pkg-config git clangd cppcheck clang-tidy python3-pip checkinstall gdb
 
  - [ ] Assuming that was successful, install CMake 
@@ -46,6 +54,31 @@ Now that you have your project cloned we need to make sure you have the tools ne
 
 		sudo snap install --classic code # or code-insiders
 
+ - [ ] Now remove all unnecessary files 
+
+		sudo apt-get autoremove -y
+		sudo apt-get autoclean -y
+		sudo apt-get clean -y
+		journalctl --disk-usage
+		sudo journalctl --vacuum-time=3d
+		du -h /var/lib/snapd/snaps
+
+ - [ ] Create the following script: `vi ~/xsnap.sh`
+		
+		#!/bin/bash
+		# Removes old revisions of snaps
+		# CLOSE ALL SNAPS BEFORE RUNNING THIS
+		set -eu
+		snap list --all | awk '/disabled/{print $1, $3}' |
+			while read snapname revision; do
+				snap remove "$snapname" --revision="$revision"
+		done
+
+ - [ ] Now execute it
+
+		chmod +x ~/xsnap.sh
+		sudo ~/xsnap.sh
+		
  - [ ] Now start Visual Studio Code
 
 		cd <into your project directory>
