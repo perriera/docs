@@ -2,12 +2,20 @@
 ### [How To Install Node.js on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
 >This guide assumes that you are using Ubuntu 22.04. Before you begin, you should have a non-**root** user account with `sudo` privileges set up on your system. You can learn how to do this by following the [Ubuntu 22.04 initial server setup tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04).
 > 
-> [Option 1](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-1-installing-node-js-with-apt-from-the-default-repositories)
+> [Option 1](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager)
 ```
-sudo apt update
-sudo apt install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm list-remote
+```
+```
+nvm install v16.14.0
+nvm list
+```
+Optional
+```
+nvm install lts/fermium
 node -v
-sudo apt install npm
 ```
 
 > [Option 2](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-2-installing-node-js-with-apt-using-a-nodesource-ppa)
@@ -27,21 +35,14 @@ sudo apt install nodejs
 ```
 sudo apt install nodejs
 ```
-> [Option 3](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager)
+> [Option 3](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-1-installing-node-js-with-apt-from-the-default-repositories)
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-source ~/.bashrc
-nvm list-remote
-```
-```
-nvm install v16.14.0
-nvm list
-```
-Optional
-```
-nvm install lts/fermium
+sudo apt update
+sudo apt install nodejs
 node -v
+sudo apt install npm
 ```
+
 ### Removing Node.js
 ```
 sudo apt remove nodejs
