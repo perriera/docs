@@ -13,6 +13,7 @@
 3. **sudo** privileges
 
 ### Wish Case
+    sudo apt install curl -y
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 	source ~/.bashrc
 	nvm list-remote
