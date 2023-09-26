@@ -1,3 +1,4 @@
+
 ## How to create an Angular app on Ubuntu 22.x
 
 >
@@ -14,17 +15,32 @@
 5. npm installed
 
 ### Wish Case
-	npm install -g @angular/cli
+	npm install -g @angular/cli@14.2.1
 	source ~/.bashrc
 	ng new my-first-angular-app --no-strict --routing --style=css
 	cd my-first-angular-app/
 	ng serve --open
 	
-
 **Alternate Case**
 Removing Angular
 
 	npm remove -g @angular/cli
+	source ~/.bashrc
+
+**Alternate Case**
+Use latest version
+
+	npm uninstall -g @angular/cli
+	npm cache clean --force
+	npm install -g @angular/cli
+	source ~/.bashrc
+	
+**Alternate Case**
+Use specific version
+
+	npm uninstall -g @angular/cli
+	npm cache clean --force
+	npm install -g @angular/cli@_choose_your_version
 	source ~/.bashrc
 	
 **Summary**
