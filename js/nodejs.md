@@ -8,7 +8,7 @@
 |**then** the ability to switch between versions is made easier.
 
 ### Prerequisites 
-1.  Ubuntu installed
+1. Ubuntu installed
 2. Access to the Internet
 3. **sudo** privileges
 
@@ -22,10 +22,16 @@
 	sudo apt install npm
 
 **Alternate Case**
-Special versions (using nvm)
+Special releases of (using nvm)
 
 	nvm install lts/fermium
 	node -v
+
+**Alternate Case**
+Specific version of node 
+
+	nvm list-remote
+	nvm install <whatever version number listed>
 
 **Alternate Case**
 Using **curl**

@@ -9,7 +9,7 @@
 |**then** the ability to create Vue apps
 
 ### Prerequisites 
-1.  Ubuntu installed
+1. Ubuntu installed
 2. Access to the Internet
 4. node installed
 5. npm installed
