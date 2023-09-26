@@ -1,5 +1,5 @@
 
-## How To Install Node.js on Ubuntu 22.04
+## How to install Node.js on Ubuntu, (22.04 or better)
 >
 |use case (purpose)|  
 |--|
