@@ -4,9 +4,9 @@
 >
 |use case (purpose)|  
 |--|
-|**Given** we need to be able to install React and related tools 
-|**when** install create-react-app using npm  
-|**then** the ability to create React apps
+|**given** we need to be able to create React apps
+|**when** we install React tools (create-react-app) using npm  
+|**then** we will be able to create React apps
 
 ### Prerequisites 
 1. Ubuntu installed

@@ -4,9 +4,9 @@
 >
 |use case (purpose)|  
 |--|
-|**Given** we need to be able to install Angular and related tools 
-|**when** install @angular/cli using npm  
-|**then** the ability to create Angular apps
+|**given** we need to be able to create Angular apps
+|**when** we install Angular tools (@angular/cli) using npm  
+|**then** we will be able to create Angular apps
 
 ### Prerequisites 
 1. Ubuntu installed

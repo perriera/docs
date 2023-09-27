@@ -4,9 +4,9 @@
 >
 |use case (purpose)|  
 |--|
-|**Given** we need to be able to install Vue and related tools 
-|**when** install @vue/cli and @vue/cli-service using npm  
-|**then** the ability to create Vue apps
+|**given** we need to be able to create Vue apps
+|**when** we install Vue tools (@vue/cli) using npm  
+|**then** we will be able to create Vue apps
 
 ### Prerequisites 
 1. Ubuntu installed
